@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header de la Tienda</title>
+  <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="Footer.css">
+
+  <!-- Incluyendo el CSS de Slick Slider -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+  <!-- Incluyendo el CSS personalizado -->
+  <link rel="stylesheet" href="ImageSlider.css"> <!-- Tu archivo de estilos -->
+
+  <!-- Incluyendo Bootstrap para el estilo de las tarjetas -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Incluyendo tu CSS personalizado si es necesario -->
+  <link rel="stylesheet" href="CategoryCard.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="Imagenes/Logo.webp" alt="Logo de la Tienda" width="70px" height="70px">
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/store.html">Todos los Productos</a></li>
+        <li><a href="/monitors.html">Monitores</a></li>
+        <li><a href="/keyboards.html">Teclados</a></li>
+        <li><a href="/mice.html">Ratones</a></li>
+        <li><a href="/headsets.html">Headsets</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar productos...">
+      <button>Buscar</button>
+    </div>
+  </header>
+
+  <div class="Fondo">
+
+    <div class="slider-container-small">
+        <h2></h2><br/>
+    
+        <!-- Slider de imágenes -->
+        <div class="slider">
+          <div>
+            <img src="https://pbs.twimg.com/media/EkZfI5MWAAAspdJ.jpg" alt="Producto 1" />
+          </div>
+        
+      </div>
+    
+      <!-- Incluyendo el JS de Slick Slider -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+      <!-- Inicialización del slider con configuración -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true, // Esto ajusta la altura del slider a la de la imagen visible
+          });
+        });
+      </script>
+
+  </div>
+
+  <div class="categories-container">
+    <h2 class="text-center">Categorías</h2>
+    <div class="row g-2 justify-content-center">
+      <!-- Tarjetas de categorías -->
+      <div class="col-auto">
+        <div class="card" style="width: 18rem;">
+          <img src="https://todoclick.cl/modules/smartblog/images/13-large_default.jpg" class="card-img-top" alt="PCs Gaming">
+          <div class="card-body">
+            <h5 class="card-title">PCs Gaming</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="card" style="width: 18rem;">
+          <img src="https://img.unocero.com/2023/08/image-79.png" class="card-img-top" alt="Monitores">
+          <div class="card-body">
+            <h5 class="card-title">Monitores</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="card" style="width: 18rem;">
+          <img src="https://img.pccomponentes.com/pcblog/5971/mejores-teclados-mecanicos.jpg" class="card-img-top" alt="Teclados">
+          <div class="card-body">
+            <h5 class="card-title">Teclados</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="card" style="width: 18rem;">
+          <img src="https://img.freepik.com/fotos-premium/mouse-juegos-computadora-alta-tecnologia-mueve-rapidamente-sobre-fondo-azul-luz-llamativa_908985-80579.jpg" class="card-img-top" alt="Ratones">
+          <div class="card-body">
+            <h5 class="card-title">Ratones</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.trendhunterstatic.com/thumbs/463/haptic-feedback-gaming-headphone.jpeg?auto=webp" class="card-img-top" alt="Auriculares">
+          <div class="card-body">
+            <h5 class="card-title">Auriculares</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Incluyendo jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Sección de enlaces -->
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#offers">Ofertas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p>Email: info@pcgamingstore.com</p>
+          <p>Teléfono: +1 234 567 890</p>
+          <p>Dirección: Calle Falsa 123, Ciudad</p>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Derechos reservados -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 PC Gaming Store. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
